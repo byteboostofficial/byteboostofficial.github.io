@@ -13,22 +13,6 @@ body {
 		font-weight: 300;
     overflow-x: hidden;
 }
-/* Default theme */
-
-h1 {
-	font-size: 36px;
-}
-
-button {
-	background-color: #4CAF50;
-	color: #fff;
-  border-radius: 100px;
-	border: none;
-	padding: 12px 24px;
-	font-size: 16px;
-	cursor: pointer;
-}
-
 
 
 
@@ -153,58 +137,6 @@ a:hover, a:active, a:focus {
     Preloader section              
 -----------------------------------------*/
 
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  background: none repeat scroll 0 0 #a1fdbf;
-}
-
-.sk-spinner-wordpress.sk-spinner {
-  background-color: #00ff37;
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  position: relative;
-  -webkit-animation: sk-innerCircle 1s linear infinite;
-  animation: sk-innerCircle 1s linear infinite; 
-}
-
-.sk-spinner-wordpress .sk-inner-circle {
-  display: block;
-  background-color: #ffffff;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  border-radius: 8px;
-  top: 5px;
-  left: 5px; 
-}
-
-@-webkit-keyframes sk-innerCircle {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
-
-@keyframes sk-innerCircle {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
 
 
 
@@ -358,10 +290,12 @@ pop ads
 
 #cookie-consent {
 	position: fixed;
+  border: 2px solid #00ff15;
+  border-radius: 100px;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #333;
+	background-color: #ffffff;
 	color: #fff;
 	padding: 20px;
 	text-align: center;
@@ -372,7 +306,7 @@ pop ads
 }
 
 #cookie-consent a {
-	color: #fff;
+	color: #ffffff;
 	text-decoration: underline;
 }
 
@@ -399,17 +333,22 @@ pop ads
 coundown
 -----------------------*/
 .countdown {
-  display: flex;
+  display: center;
+  padding-bottom: 220px;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 100px;
+ 
 }
 
 .timer {
-  display: flex;
+  display: center;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 30px;
+  
 }
 
 .timer span {
@@ -417,7 +356,7 @@ coundown
   padding: 10px;
   margin: 0 5px;
   border-radius: 5px;
-  background-color: #333;
+  background-color: #303030;
   color: #fff;
 }
 
@@ -430,20 +369,14 @@ coundown
 
 #about .col-md-6 {
   padding-top: 22px;
-  padding-bottom: 32px;
+  padding-bottom: 30px;
 }
 
 #about .col-md-6 img {
   padding: 22px 0px 22px 22px;
 }
 
-#about .col-md-4 {
-  padding-bottom: 32px;
-}
 
-#about .col-md-4 img {
-  padding-top: 12px;
-}
 
 
 
@@ -452,13 +385,18 @@ coundown
 -----------------------------------------*/
 
 .ad {
+  display: flex;
+  padding-top: 22px;
+  padding-bottom: 30px;
   width: 300px;
   height: 250px;
-  border: 1px solid #ccc;
+  border: 1px solid #1a1a1a;
   padding: 10px;
 }
 
 .ad img {
+  display: flex;
+  padding: 22px 0px 22px 22px;
   max-width: 100%;
   max-height: 100%;
 }
@@ -466,51 +404,6 @@ coundown
 
 
 /*social counter*/
-/* Popup container */
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Popup content */
-.popup-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-/* Close button */
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* Button styles */
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  background-color: #4CAF50;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #3e8e41;
-}
 
 /*---------------------------------------
    Contact section              
@@ -794,7 +687,7 @@ footer hr {
 }
 
 .go-top:hover {
-    background: #0066ff;
+    background: #1eff00;
     color: #ffffff;
 }
 

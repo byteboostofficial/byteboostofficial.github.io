@@ -13,29 +13,6 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 // Set the date we're counting down to
 /*theme*/
-function toggleTheme() {
-	var theme = document.getElementById('theme-style').getAttribute('href');
-	if (theme === 'default.css') {
-		document.getElementById('theme-style').setAttribute('href', 'dark.css');
-		document.body.style.backgroundColor = '#333';
-		document.body.style.color = '#fff';
-	} else {
-		document.getElementById('theme-style').setAttribute('href', 'default.css');
-		document.body.style.backgroundColor = '#f2f2f2';
-		document.body.style.color = '#333';
-	}
-}
-
-
-// Open the popup
-function openPopup() {
-  document.getElementById("myPopup").style.display = "flex";
-}
-
-// Close the popup
-function closePopup() {
-  document.getElementById("myPopup").style.display = "none";
-}
 
 
 
@@ -68,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /*coundown*/
-var countDownDate = new Date("Mar 13, 2023 23:59:59").getTime();
+var countDownDate = new Date("Mar 20, 2023 23:59:59").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
