@@ -140,6 +140,9 @@ a:hover, a:active, a:focus {
 
 
 
+
+
+
 /*---------------------------------------
     Main Navigation             
 -----------------------------------------*/
@@ -228,7 +231,7 @@ a:hover, a:active, a:focus {
 }
 
 .main-home {
-  background: url('../home-bg.jpg') no-repeat;
+  background: url('../images/home-bg.jpg') no-repeat;
   height: 100vh;
 }
 
@@ -290,12 +293,12 @@ pop ads
 
 #cookie-consent {
 	position: fixed;
-  border: 2px solid #00ff15;
-  border-radius: 100px;
+  border: 2px solid #000000;
+  border-radius: 10px;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #ffffff;
+	background-color: #061a0973;
 	color: #fff;
 	padding: 20px;
 	text-align: center;
@@ -332,34 +335,32 @@ pop ads
 /*-------------------------
 coundown
 -----------------------*/
-.countdown {
-  display: center;
-  padding-bottom: 220px;
-  justify-content: center;
-  align-items: center;
+
+.box {
   text-align: center;
-  height: 100px;
- 
+  font-weight: var(--font-semi);
+  padding: 2rem 0;
+}
+#button .btn {
+  background: #2cb120;
+  border: 30px solid #ffffff;
+  border-radius: 100px;
+  color: rgb(255, 255, 255);
+  font-family: 'Merriweather', serif;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 13px 22px;
+  margin-top: 42px;
+  transition: all 0.4s ease-in-out;
 }
 
-.timer {
-  display: center;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 30px;
-  
+#button .btn:hover {
+  background: #00ff2a;
+  border-color: #ffffff;
+  color: #ffffff;
 }
-
-.timer span {
-  display: inline-block;
-  padding: 10px;
-  margin: 0 5px;
-  border-radius: 5px;
-  background-color: #303030;
-  color: #fff;
-}
-
 
 
 
@@ -381,7 +382,7 @@ coundown
 
 
 /*---------------------------------------
-   Gallery section              
+   ADVERDISMENT        
 -----------------------------------------*/
 
 .ad {
@@ -614,6 +615,7 @@ coundown
 
 
 
+
 /*---------------------------------------
    Blog Single Post section              
 -----------------------------------------*/
@@ -638,6 +640,11 @@ coundown
 }
 
 
+/*==============
+*/
+
+
+
 
 
 
@@ -652,6 +659,40 @@ footer {
     position: relative;
 
 }
+footer .container {
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 2rem 0;
+  
+}
+
+
+#viewerCount {
+  color: rgb(9, 255, 0);
+}
+
+#guna .btn {
+  background: #ff0000;
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  color: rgb(255, 255, 255);
+  font-family: 'Merriweather', serif;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 13px 22px;
+  margin-top: 42px;
+  transition: all 0.4s ease-in-out;
+}
+
+#guna .btn:hover {
+  background: #b10000;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+
 
 footer .col-md-4 .fa {
   color: #ffffff;
