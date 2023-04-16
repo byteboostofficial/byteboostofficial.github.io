@@ -336,31 +336,7 @@ pop ads
 coundown
 -----------------------*/
 
-.box {
-  text-align: center;
-  font-weight: var(--font-semi);
-  padding: 2rem 0;
-}
-#button .btn {
-  background: #2cb120;
-  border: 30px solid #ffffff;
-  border-radius: 100px;
-  color: rgb(255, 255, 255);
-  font-family: 'Merriweather', serif;
-  font-size: 10px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding: 13px 22px;
-  margin-top: 42px;
-  transition: all 0.4s ease-in-out;
-}
 
-#button .btn:hover {
-  background: #00ff2a;
-  border-color: #ffffff;
-  color: #ffffff;
-}
 
 
 
