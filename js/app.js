@@ -43,37 +43,38 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+/*++++++buycoffe*/
+
+
+
 
 /*coundown*/
-var countDownDate = new Date("Mar 20, 2023 23:59:59").getTime();
+// Get viewer count element
+const viewerCountElement = document.getElementById('viewerCount');
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+// Set initial viewer count
+let viewerCount = 0;
 
-  // Get today's date and time
-  var now = new Date().getTime();
+// Check if viewer count is stored in local storage
+if (localStorage.getItem('viewerCount')) {
+  viewerCount = parseInt(localStorage.getItem('viewerCount'));
+}
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+// Display initial viewer count
+viewerCountElement.textContent = viewerCount;
 
-  // Calculate days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+// Function to increment viewer count
+function incrementViewerCount() {
+  // Increment viewer count
+  viewerCount++;
+  // Update viewer count element
+  viewerCountElement.textContent = viewerCount;
+  // Store viewer count in local storage
+  localStorage.setItem('viewerCount', viewerCount);
+}
 
-  // Display the result in the element with class="timer"
-  document.querySelector(".days").innerHTML = days + "d";
-  document.querySelector(".hours").innerHTML = hours + "h";
-  document.querySelector(".minutes").innerHTML = minutes + "m";
-  document.querySelector(".seconds").innerHTML = seconds + "s";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.querySelector(".timer").innerHTML = "EXPIRED";
-  }
-}, 1000);
+// Automatically increment viewer count on page load
+window.onload = incrementViewerCount;
 
 
 
